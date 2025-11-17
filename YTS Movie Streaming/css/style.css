@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+ 
+body {
+  background: #1c1c1c;
+  line-height: 1.5;
+}
+ 
+.topbar {
+  background: #0f1c2e;
+  padding: 18px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  overflow: hidden;  
+}
+
+ 
+.logo {
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+  color: #00ff7f;
+}
+
+.logo span {
+  color: #fff;
+}
+
+ 
+.nav {
+  float: left;
+  margin-left: 5px;
+  margin-top: 6px;
+ 
+}
+
+.nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ccc;
+  font-size: 15px;
+}
+
+.nav a:hover {
+  color: #00ff7f;
+}
+
+ 
+.searchs {
+    margin-left: 300px;
+  float: left;
+  
+}
+
+.searchs input {
+  padding: 12px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: #000;
+}
+
+ 
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #0d1726;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.hero p {
+  color: #bbb;
+  font-size: 20px;
+}
+.set{
+    margin-left:570px;
+}
+.color a{
+    color: #00ff7f;
+    
+}
+.movies {
+  padding: 30px;
+}
+
+.movies h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #00ff7f;
+  text-align: center;
+}
+
+.grid {
+  overflow: hidden;
+ 
+}
+.zero h1
+{
+    padding-top:30px;
+    font-size:20px;
+    text-align: center;
+}
+.zero{
+    background-color:#0d1726 ;
+}
+.zero p
+{
+    padding-top:10px;
+    font-size:20px;
+    text-align: center;
+     padding-bottom:10px;
+}
+.card {
+  width: 20%;
+  margin: 2%;
+  float: left;
+  background: #2a2a2a;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.tagging{
+    float:left;
+    margin-left:14px;
+    font-size: 20px;
+  
+  padding-top:5px;
+  color:gray;
+}
+.card:hover {
+  transform: scale(1.05);
+  background: #333;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.card p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+ 
+footer {
+  background: #0f1c2e;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 30px;
+  clear: both;  
+}
+.in{
+    float:right;
+    padding-top:4px;
+    margin-right: 10px;
+
+}
+.icon a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+      
+  
+}
+.container {
+    padding-top:50px;
+    text-align: center;
+    border-radius: 40px;
+}
+.forms {
+     display: inline-block;
+     border-radius: 40px;
+     text-align: left;
+     margin: 0 auto;
+}
+.forms input {
+    width: 300px;
+    padding: 12px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #000;
+    margin-bottom: 10px;
+}
+ 
+.forms button {
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #00ff7f;
+    font-weight: bold;
+    cursor: pointer;
+}
+ .reachout {
+  padding: 30px;
+  background: #1c1c1c;
+  color: #fff;
+  text-align: center;
+}
+
+.reachout h2 {
+  font-size: 22px;
+  color: #00ff7f;
+  margin: 20px 0 10px;
+}
+
+.contact-box {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 15px auto;
+  width: 60%;
+  text-align: left;
+}
+
+.contact-box p {
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+.contact-form {
+  margin-top: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: #000;
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-form button {
+  background: #00ff7f;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #00cc66;
+}
+.movie h2 {
+  color: #ffcc00; 
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+.card a{
+    text-decoration: none;
+  
+}
+.details {
+  padding: 30px;
+  background: #1c1c1c;
+}
+
+.poster {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+
+.poster img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  height:1%;
+}
+
+.info {
+  float: left;
+  width: 65%;
+  padding-bottom: 20px;
+}
+
+.info h2 {
+  color: #00ff7f;
+  margin-bottom: 10px;
+}
+
+.info h3 {
+  margin-top: 20px;
+  color: #ffcc00;
+}
+
+.info p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.downloads {
+  margin-top: 20px;
+}
+
+.downloads a {
+  display: inline-block;
+  background: #00ff7f;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.downloads a:hover {
+  background: #00cc66;
+  color: #fff;
+}
+.block{
+    border-width: 4px;
+    border-color: #06e576;
+    border-style: solid;
+    
+}
+.notice{
+    margin-left:250px;
+    margin-right:250px;
+}
+.block h1{
+    color: red;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: rgb(191, 190, 190);
+    text-decoration-thickness: 3px;
+}
+.block p{
+    color: white;
+    text-align: left;
+    padding-top:5px;
+    padding-bottom:10px;
+    padding-left:10px;
+}

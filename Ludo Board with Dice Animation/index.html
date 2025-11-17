@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ludo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full h-full bg-cover bg-no-repeat" style="background-image: url('assets/background.jpg');">
+    <br><br><br><br>
+    <div class="flex justify-center">
+        <table class="border-8 border-amber-700 w-2/5 h-72 bg-white rounded-3xl overflow-hidden" style="border-collapse: separate;">
+            <tr>
+                <td class="border-t-0 border-r border-b border-l-0 border-black bg-[rgb(0,255,4)]" colspan="6" rowspan="6">
+                    <div class="flex justify-center">
+                        <table class="w-32 h-32 bg-[rgb(44,134,45)] rounded-3xl overflow-hidden" style="border-collapse: separate;">
+                            <tr>    
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/green.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/green.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/green.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>     
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/green.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td> 
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="border-t-0 border-r border-b border-l border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border-t-0 border-r border-b border-l border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border-t-0 border-r border-b border-l border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border-t-0 border-r-0 border-b border-l border-black bg-red-600" colspan="6" rowspan="6">
+                    <div class="flex justify-center">
+                        <table class="w-32 h-32 bg-[rgb(184,34,34)] rounded-3xl overflow-hidden" style="border-collapse: separate;">
+                            <tr>    
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/red.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/red.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/red.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/red.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-red-500">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2620;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-red-500">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2605;</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border border-black w-12 bg-gray-400">
+                    <div class="flex justify-center">
+                        <span class="text-gray-600 text-lg">&#9733;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-red-500">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-red-500">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-red-500">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-red-500">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border-l-0 border-b border-t border-r border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-[rgb(0,255,4)]">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2605;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-36 bg-ludo-gold" colspan="3" rowspan="3">
+                    <div class="flex justify-center">
+                        <img src="assets/center.jpg" alt="Ludo Token" class="w-full h-full">
+                    </div>
+                </td>
+                <td class="border-l-2 border-t border-b border-r border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-gray-400">
+                    <div class="flex justify-center">
+                        <span class="text-gray-600 text-lg">&#9733;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border-r-0 border-b border-t border-l border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border-l-0 border-b border-t border-r border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-[rgb(0,255,4)]">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2620;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-[rgb(0,255,4)]">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-[rgb(0,255,4)]">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-[rgb(0,255,4)]">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-[rgb(0,255,4)]">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border-l-2 border-t border-b border-r border-black bg-[rgb(15,165,224)]">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-[rgb(15,165,224)]">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-[rgb(15,165,224)]">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-[rgb(15,165,224)]">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-[rgb(15,165,224)]">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2620;</span>
+                    </div>
+                </td>
+                <td class="border-r-0 border-b border-t border-l border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border-l-0 border-b border-t border-r border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-gray-400">
+                    <div class="flex justify-center">
+                        <span class="text-gray-600 text-lg">&#9733;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border-l-2 border-t border-b border-r border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-[rgb(15,165,224)]">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2605;</span>
+                    </div>
+                </td>
+                <td class="border-r-0 border-b border-t border-l border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border-b-0 border-r border-t border-l-0 border-black bg-yellow-400" colspan="6" rowspan="6">
+                    <div class="flex justify-center">
+                        <table class="w-32 h-32 bg-[rgb(171,171,23)] rounded-3xl overflow-hidden" style="border-collapse: separate;">
+                            <tr>    
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/yellow.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/yellow.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/yellow.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/yellow.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="border-t-2 border-l border-b border-r border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border-t-2 border-l border-b border-r border-black w-12 bg-yellow-400">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border-t-2 border-l border-b border-r border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border-b-0 border-r-0 border-t border-l border-black bg-[rgb(15,165,224)]" colspan="6" rowspan="6">
+                    <div class="flex justify-center">
+                        <table class="w-32 h-32 bg-[rgb(22,112,148)] rounded-3xl overflow-hidden" style="border-collapse: separate;">
+                            <tr>    
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/blue.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/blue.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/blue.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                                <td class="border-0" colspan="2">
+                                    <div class="flex justify-center">
+                                        <img src="assets/blue.jpg" alt="Ludo Token" class="w-8 h-8 rounded-lg">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-yellow-400">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-yellow-400">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-yellow-400">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-gray-400">
+                    <div class="flex justify-center">
+                        <span class="text-gray-600">&#9733;</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="border border-black w-12 bg-yellow-400">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2605;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12 bg-yellow-400">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2620;</span>
+                    </div>
+                </td>
+                <td class="border border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="border-b-0 border-r border-t border-l border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border-b-0 border-r border-t border-l border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+                <td class="border-b-0 border-r border-t border-l border-black w-12">
+                    <div class="flex justify-center">
+                        <span class="text-black text-lg">&#x2610;</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="mt-8 flex flex-col items-center space-y-4">
+    <div id="dice-container" class="w-24 h-24 flex items-center justify-center">
+      <img id="dice" src="assets/Dices/dice_1.png" alt="Dice" class="w-24 h-24 transition-transform duration-300">
+    </div>
+    <button id="roll" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+      Roll
+    </button>
+  </div>
+      <script>
+    const dice = document.getElementById('dice');
+    const roll = document.getElementById('roll');
+    const images = [
+      'assets/Dices/dice_1.png',
+      'assets/Dices/dice_2.png',
+      'assets/Dices/dice_3.png',
+      'assets/Dices/dice_4.png',
+      'assets/Dices/dice_5.png',
+      'assets/Dices/dice_6.png'];
+    roll.addEventListener('click', () => {
+      dice.classList.add('rotate-[720deg]', 'scale-125', 'transition-transform', 'duration-1000', 'ease-in-out'); 
+      setTimeout(() => {
+        dice.classList.remove('rotate-[720deg]', 'scale-125', 'transition-transform', 'duration-1000', 'ease-in-out');
+        const random = Math.floor(Math.random() * 6) + 1;
+        dice.src = images[random - 1];
+      }, 1000);
+    });
+  </script>
+</body>
+</html>

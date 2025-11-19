@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <title>Home Task</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-10">  
+  <div class="flex flex-col items-center">
+    <img id="pic" src="assets/friend_1.jpeg" alt="Profile Picture" class="w-44 h-44 rounded-full border-8 border-gray-500 shadow-lg object-cover">
+  </div>  
+  <div class="grid grid-cols-2 gap-10 mt-10 text-center text-lg">
+    <div class="bg-white shadow-lg p-6 rounded-xl w-80">
+      <h3 class="font-bold text-xl mb-2">Name</h3>
+      <p id="name" class="text-gray-700 text-lg">Hamza Afzal</p>
+    </div>
+    <div class="bg-white shadow-lg p-6 rounded-xl w-80">
+      <h3 class="font-bold text-xl mb-2">Phone</h3>
+      <p id="phone" class="text-gray-700 text-lg">+92 300 1234567</p>
+    </div>
+    <div class="bg-white shadow-lg p-6 rounded-xl w-80">
+      <h3 class="font-bold text-xl mb-2">Degree Name</h3>
+      <p id="degree" class="text-gray-700 text-lg">BS Computer Science</p>
+    </div>
+    <div class="bg-white shadow-lg p-6 rounded-xl w-80">
+      <h3 class="font-bold text-xl mb-2">Institute</h3>
+      <p id="uni" class="text-gray-700 text-lg">Bahria University Islamabad</p>
+    </div>
+  </div>  
+  <div class="mt-16 text-center">
+    <h2 class="text-2xl font-bold mb-6">Friends</h2>
+    <div class="flex gap-10 justify-center">
+      <button id="f1" class="bg-white shadow-lg p-6 rounded-xl w-48 text-lg hover:bg-gray-200 transition">Syed Taha Ali Shams</button>
+      <button id="f2" class="bg-white shadow-lg p-6 rounded-xl w-48 text-lg hover:bg-gray-200 transition">Osman Siddique</button>
+      <button id="f3" class="bg-white shadow-lg p-6 rounded-xl w-48 text-lg hover:bg-gray-200 transition">Rehan Tariq</button>
+    </div>
+  </div>
+  <script>
+    let h = "Hamza Afzal";
+    function update(n) {
+      let name, phone, degree, uni, img;
+      if (n === "Hamza Afzal") {
+        name = "Hamza Afzal";
+        phone = "+92 300 1234567";
+        degree = "BS Computer Science";
+        uni = "Bahria University Islamabad";
+        img = "assets/friend_1.jpeg";
+      } 
+      else if (n === "Syed Taha Ali Shams") {
+        name = "Syed Taha Ali Shams";
+        phone = "+92 90078601";
+        degree = "BS Computer Science";
+        uni = "Bahria University Islamabad";
+        img = "assets/friend_2.jpeg";
+      } 
+      else if (n === "Osman Siddique") {
+        name = "Osman Siddique";
+        phone = "+92 311 2211112";
+        degree = "BS Computer and Software Engineering";
+        uni = "Massachusetts Institute of Technology";
+        img = "assets/friend_3.jpeg";
+      } 
+      else if (n === "Rehan Tariq") {
+        name = "Rehan Tariq";
+        phone = "+92 90078601";
+        degree = "BS Computer Science";
+        uni = "FAST NUCES Islamabad";
+        img = "assets/friend_4.jpeg";
+      }
+ 
+      document.getElementById("name").innerText = name;
+      document.getElementById("phone").innerText = phone;
+      document.getElementById("degree").innerText = degree;
+      document.getElementById("uni").innerText = uni;
+      document.getElementById("pic").src = img;
+ 
+      const btns = document.getElementsByTagName("button");
+    for (let btn of btns) 
+    {
+      if (btn.innerText === n) {
+        btn.innerText = h;
+      }
+    }
+      h = n;
+    }
+    document.getElementById("f1").addEventListener("click", e => update(e.target.innerText));
+    document.getElementById("f2").addEventListener("click", e => update(e.target.innerText));
+    document.getElementById("f3").addEventListener("click", e => update(e.target.innerText));
+  </script>
+</body>
+</html>

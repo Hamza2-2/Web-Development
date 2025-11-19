@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans leading-relaxed m-0 p-0 box-border">
+ 
+  <header class="bg-blue-900 px-8 py-5 sticky top-0 z-50 overflow-hidden">
+    <div class="float-left text-2xl font-bold text-green-400">Movie<span class="text-white">Store</span></div>
+    <div class="float-left ml-4 text-xl pt-1 text-gray-400">Best quality movies at great prices</div>
+    <div class="ml-96">
+      <form class="ml-72 float-left">
+        <input type="text" placeholder="Search for movies..." class="px-3 py-3 rounded-full border-none outline-none text-black">
+      </form>
+      <nav class="float-left ml-1 mt-2">
+        <a href="index.html" class="mx-3 no-underline font-bold text-gray-300 text-base hover:text-green-400">Home</a>
+        <a href="trending.html" class="mx-3 no-underline font-bold text-gray-300 text-base hover:text-green-400">Trending</a>
+        <span>
+          <a href="reach.html" class="mx-3 no-underline font-bold text-green-400 text-base">Contact</a>
+        </span>
+      </nav>
+    </div>
+
+    <div class="float-right pt-1 mr-3">
+      <div class="flex items-center space-x-4">
+        <a href="checkout.html" class="text-yellow-400 no-underline text-sm hover:text-yellow-300">🛒 Cart (0)</a>
+        <a href="login.html" class="text-white no-underline text-sm">Login </a>
+        <a href="register.html" class="text-white no-underline text-sm">| Register</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="text-center py-12 px-5 bg-blue-800">
+    <h1 class="text-5xl mb-3 text-white">Movie Store - Buy Premium Movies Online</h1>
+    <p class="text-gray-300 text-xl">Welcome to Movie Store. Purchase and own your favorite movies in excellent<br> 720p, 1080p, 2160p 4K quality at unbeatable prices. Instant digital delivery.</p>
+  </section>
+ 
+  <section class="p-8">
+    <h2 class="mb-5 text-xl text-green-400 text-center">Featured Movies - Best Sellers</h2>
+    <div class="overflow-hidden">
+      <div class="w-1/5 m-2 float-left bg-gray-800 rounded-md p-3 text-center transition-all duration-300 hover:scale-105 hover:bg-gray-700">
+        <div>
+          <a href="movie.html" class="no-underline">
+            <img src="assets/movie_4.jpg" alt="Movie 1" class="w-full h-80 object-cover rounded mb-3">
+            <h3 class="text-base mb-1 text-white">Doraemon Steel Troops</h3>
+            <p class="text-sm text-gray-400">2024 • Action/Adventure</p>
+            <div class="mt-2">
+              <span class="text-green-400 font-bold text-lg">$14.99</span>
+              <span class="text-gray-500 line-through ml-2">$19.99</span>
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-2 text-sm font-bold transition">Buy Now</button>
+          </a>
+        </div>
+      </div>
+      <div class="w-1/5 m-2 float-left bg-gray-800 rounded-md p-3 text-center transition-all duration-300 hover:scale-105 hover:bg-gray-700">
+        <div>
+          <a href="movie.html" class="no-underline">
+            <img src="assets/movie_1.jpg" alt="Movie 2" class="w-full h-80 object-cover rounded mb-3">
+            <h3 class="text-base mb-1 text-white">Dracula: A Love Tale</h3>
+            <p class="text-sm text-gray-400">2023 • Horror/Romance</p>
+            <div class="mt-2">
+              <span class="text-green-400 font-bold text-lg">$12.99</span>
+              <span class="text-gray-500 line-through ml-2">$16.99</span>
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-2 text-sm font-bold transition">Buy Now</button>
+          </a>
+        </div>
+      </div>
+      <div class="w-1/5 m-2 float-left bg-gray-800 rounded-md p-3 text-center transition-all duration-300 hover:scale-105 hover:bg-gray-700">
+        <div>
+          <a href="movie.html" class="no-underline">
+            <img src="assets/movie_2.jpg" alt="Movie 3" class="w-full h-80 object-cover rounded mb-3">
+            <h3 class="text-base mb-1 text-white">Fatal Instinct</h3>
+            <p class="text-sm text-gray-400">2025 • Thriller</p>
+            <div class="mt-2">
+              <span class="text-green-400 font-bold text-lg">$16.99</span>
+              <span class="text-red-400 text-xs">NEW RELEASE</span>
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-2 text-sm font-bold transition">Buy Now</button>
+          </a>
+        </div>
+      </div>
+      <div class="w-1/5 m-2 float-left bg-gray-800 rounded-md p-3 text-center transition-all duration-300 hover:scale-105 hover:bg-gray-700">
+        <div>
+          <a href="movie.html" class="no-underline">
+            <img src="assets/movie_3.jpg" alt="Movie 4" class="w-full h-80 object-cover rounded mb-3">
+            <h3 class="text-base mb-1 text-white">Witch Hunter</h3>
+            <p class="text-sm text-gray-400">2022 • Fantasy/Action</p>
+            <div class="mt-2">
+              <span class="text-green-400 font-bold text-lg">$9.99</span>
+              <span class="text-yellow-400 text-xs">BESTSELLER</span>
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-2 text-sm font-bold transition">Buy Now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="mx-60">
+    <div class="border-4 border-green-500">
+      <h1 class="text-green-500 text-center pt-3 pb-3 underline decoration-gray-400 decoration-4">🔒 Secure Payment Guarantee</h1>
+      <p class="text-white text-left pt-1 pb-3 pl-3">All transactions are secured with 256-bit SSL encryption. Your payment information is safe and protected. We accept all major credit cards, PayPal, and digital wallets. Instant delivery after purchase completion.</p>
+    </div>
+  </div>
+  
+  <footer class="bg-blue-900 text-center p-4 text-sm text-gray-400 mt-8 clear-both">
+    <p>Movie Store © 2025 - Your trusted digital movie retailer | <a href="#" class="text-green-400">Privacy Policy</a> | <a href="#" class="text-green-400">Terms of Service</a> | <a href="#" class="text-green-400">Refund Policy</a></p>
+  </footer>
+</body>
+</html>

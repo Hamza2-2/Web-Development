@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Movie Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans leading-relaxed m-0 p-0 box-border">
+  <header class="bg-blue-900 px-8 py-5 sticky top-0 z-50 overflow-hidden">
+    <div class="float-left text-2xl font-bold text-green-400">Movie<span class="text-white">Store</span></div>
+    <div class="float-left ml-4 text-xl pt-1 text-gray-400">Best quality movies at great prices</div>
+    <div class="ml-96">
+      <form class="ml-72 float-left">
+        <input type="text" placeholder="Search for movies..." class="px-3 py-3 rounded-full border-none outline-none text-black">
+      </form>
+      <nav class="float-left ml-1 mt-2">
+        <a href="index.html" class="mx-3 no-underline font-bold text-gray-300 text-base hover:text-green-400">Home</a>
+        <a href="trending.html" class="mx-3 no-underline font-bold text-gray-300 text-base hover:text-green-400">Trending</a>
+        <span>
+          <a href="reach.html" class="mx-3 no-underline font-bold text-green-400 text-base">Contact</a>
+        </span>
+      </nav>
+    </div>
+
+    <div class="float-right pt-1 mr-3">
+      <div class="flex items-center space-x-4">
+        <a href="checkout.html" class="text-yellow-400 no-underline text-sm hover:text-yellow-300">🛒 Cart (0)</a>
+        <a href="login.html" class="text-white no-underline text-sm">Login </a>
+        <a href="register.html" class="text-white no-underline text-sm">| Register</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="text-center py-12 px-5 bg-blue-800">
+    <h1 class="text-5xl mb-3 text-white">Welcome Back to Movie Store</h1>
+    <p class="text-gray-300 text-xl">Login to your account to access your movie library and continue shopping.</p>
+  </section>
+
+  <div class="flex justify-center py-12">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-96">
+      <h2 class="text-2xl font-bold text-green-400 mb-6 text-center">Login to Your Account</h2>
+      <form class="space-y-4">
+        <div>
+          <input type="text" placeholder="Username or Email" required class="w-full px-4 py-3 rounded-lg border-none outline-none text-black bg-white">
+        </div>
+        <div>
+          <input type="password" placeholder="Password" required class="w-full px-4 py-3 rounded-lg border-none outline-none text-black bg-white">
+        </div>
+        <div class="flex items-center justify-between">
+          <label class="flex items-center text-sm text-gray-300">
+            <input type="checkbox" class="mr-2">
+            Remember me
+          </label>
+          <a href="#" class="text-green-400 text-sm hover:text-green-300">Forgot Password?</a>
+        </div>
+        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-bold text-lg transition">Login</button>
+      </form>
+      <div class="mt-6 text-center">
+        <p class="text-gray-400">Don't have an account? <a href="register.html" class="text-green-400 hover:text-green-300">Register here</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-blue-900 text-center p-4 text-sm text-gray-400 mt-8 clear-both">
+    <p>Movie Store © 2025 - Your trusted digital movie retailer | <a href="#" class="text-green-400">Privacy Policy</a> | <a href="#" class="text-green-400">Terms of Service</a></p>
+  </footer>
+</body>
+</html>
